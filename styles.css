@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px auto;
+    background: #886098;
+    max-width: 796px;
+    color: #FED7D2;
+}
+
+a {
+    font-size: 1.5em;
+    color: #FED7D2;
+}
+
+a:hover {
+    color: rgba(254, 215, 210, 0.692);
+}
+
+p {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0;  
+}
+
+footer {
+    padding-top: 40px;
+    text-align: center; 
+
+}
+
+img {
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+h3 {
+text-align: center;
+margin-bottom: 0;
+}
+
+/* ====Classes==== */
+.elevation {
+    background: white;
+}
+
+.header-main {
+    text-align: center;
+}
+
+.grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    margin: 5px;
+}
+  
+.card,
+.back,
+.front {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+}
+  
+.back,
+.front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front {
+    background: url('images/polygons/back.jpg') no-repeat center / cover;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #3C4F5F;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.match {
+    background-image: none !important;
+}
+
+.match .front {
+    background: #886098 !important;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+ 
+.cell {
+    margin: 0 10px;
+    width: 150px;
+}
